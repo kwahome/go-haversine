@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/kwahome/haversine/haversine"
+	"github.com/kwahome/go-haversine/pkg/haversine"
 )
 
 func main() {
