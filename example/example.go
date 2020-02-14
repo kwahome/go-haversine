@@ -1,4 +1,4 @@
-package main
+package example
 
 import (
 	"fmt"
@@ -16,5 +16,5 @@ func main() {
 		Longitude: 3,
 	}
 
-	fmt.Println(origin.DistanceTo(remote, haversine.KM))
+	fmt.Println(origin.DistanceTo(remote, haversine.M))
 }

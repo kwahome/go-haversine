@@ -21,13 +21,13 @@ const (
 	EarthRadiusMeters = EarthRadiusKm * MetersPerKm
 
 	// kilometers unit
-	KM Unit = "km"
+	KM Unit = "kilometers"
 
 	// meters unit
-	M Unit = "m"
+	M Unit = "meters"
 
 	// miles unit
-	MI Unit = "mi"
+	MI Unit = "miles"
 )
 
 type Unit string
