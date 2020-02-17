@@ -1,4 +1,4 @@
-package example
+package main
 
 import (
 	"fmt"
@@ -6,15 +6,24 @@ import (
 )
 
 func main() {
-	origin := haversine.Coordinate{
-		Latitude: 1,
-		Longitude: 1,
+	nairobi := haversine.Coordinate{
+		Latitude: 1.2921,
+		Longitude: 36.8219,
+	}
+	mombasa := haversine.Coordinate{
+		Latitude: 4.0435,
+		Longitude: 39.6682,
 	}
 
-	remote := haversine.Coordinate{
-		Latitude: 2,
-		Longitude: 3,
-	}
+	units := haversine.M
+	distance := nairobi.DistanceTo(mombasa, units)
+	fmt.Println("Distance from Nairobi =", nairobi, "to Mombasa =", mombasa, "in", units, "is", distance)
 
-	fmt.Println(origin.DistanceTo(remote, haversine.M))
+	units = haversine.KM
+	distance = nairobi.DistanceTo(mombasa, units)
+	fmt.Println("Distance from Nairobi =", nairobi, "to Mombasa =", mombasa, "in", units, "is", distance)
+
+	units = haversine.MI
+	distance = nairobi.DistanceTo(mombasa, units)
+	fmt.Println("Distance from Nairobi =", nairobi, "to Mombasa =", mombasa, "in", units, "is", distance)
 }
