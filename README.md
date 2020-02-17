@@ -63,6 +63,9 @@ Code formatting:
 ./bin/code_format.sh
 ```
 
+## Docs
+https://godoc.org/github.com/kwahome/go-haversine
+
 ## License
 
 See the [LICENSE](LICENSE) file for license rights and limitations (MIT).
