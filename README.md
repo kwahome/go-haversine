@@ -41,6 +41,11 @@ Below is an example showing how to calculate the shortest path between two coord
     	fmt.Println("Distance from Nairobi =", nairobi, "to Mombasa =", mombasa, "in", units, "is", distance)
     }
 
+```
+Distance from Nairobi = {latitude=1.2921, longitude=36.8219} to Mombasa = {latitude=4.0435, longitude=39.6682} in meters is 439923.26193980715
+Distance from Nairobi = {latitude=1.2921, longitude=36.8219} to Mombasa = {latitude=4.0435, longitude=39.6682} in kilometers is 439.92326193980716
+Distance from Nairobi = {latitude=1.2921, longitude=36.8219} to Mombasa = {latitude=4.0435, longitude=39.6682} in miles is 273.3034485571742
+```
 ## Development
 
 Find the entire code in the repository:
@@ -49,7 +54,7 @@ Find the entire code in the repository:
 https://github.com/kwahome/go-haversine
 ```
 
-Use convenience scripts in `./bin` to run tests and format code:
+Use convenience scripts in `./bin` to run tests and format code.
 
 Tests:
 
